@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Dr. Mario Clone</title>
+    <script src="./prototype.js"></script>
+    <script src="./drmario.js"></script>
+    <style type="text/css">
+
+        body {
+            background-color: darkseagreen;
+            font-family: Helvetica;
+        }
+
+        #header {
+            text-align: center;
+            font-size: 36px;
+        }
+
+        #header h1 {
+            margin: 0;
+        }
+
+        #bottle {
+
+            position: relative;
+            margin: 0 auto;
+            border: 3px solid darkslateblue;
+            padding: 5px;
+            height: 700px;
+            width: 400px;
+            background-color: grey;
+            float: left;
+
+        }
+
+        #bottle p {
+
+            position: absolute;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nextpill {
+            border: 1px solid red;
+            float: right;
+            padding: 20px;
+        }
+
+        #bottle i {
+            display: block;
+         }
+
+        #container {
+            border: 1px solid red;
+            position: relative;
+            clear: both;
+            overflow: auto;
+        }
+
+        #controls {
+
+        }
+
+        #wrapper {
+            border: 1px solid yellow;
+            width: 480px;
+            margin: auto;
+        }
+
+        .nextpill i {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div id="wrapper">
+        <div id="header"><h1>Dr. Pharmacy</h1></div>
+        <div id="container"></div>
+        <br clear="all" />
+        <div id="controls">
+            <button onclick="app.pauseGame()">Pause</button>
+            <button onclick="app.endGame()">Restart</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var app = new drmario();
+    </script>
+</body>
+</html>
