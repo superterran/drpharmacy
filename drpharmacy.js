@@ -6,7 +6,7 @@ var drmario = Class.create({
     step: 5, // how far the current pill fall each loop
     pillSize: 20, // pill bit size, in pixels
     width: 20, // bottle width, in pills
-    height: 5, // bottle height, in pills
+    height: 30, // bottle height, in pills
     grid: [],
     colors: ['red','green','blue','white','yellow'],
     pills: [],
